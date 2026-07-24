@@ -56,7 +56,7 @@ DASHBOARD_HTML = r"""
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextGen Analytics — Lead Generator</title>
+<title>Attrix Lead Generator</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -230,8 +230,16 @@ DASHBOARD_HTML = r"""
 <div class="container">
   <div class="header">
     <div>
-      <h1>🎯 NextGen Analytics</h1>
-      <p>Lead Generator — Find businesses on Google Maps that need web development services</p>
+      <h1>📈 Attrix Lead Generator</h1>
+<p>
+Developed by
+<a href="https://vijaygoswami.com" target="_blank" class="link">Vijay Goswami</a>
+•
+<a href="https://www.attrixtech.com" target="_blank" class="link">Attrix Technologies</a>
+•
+Technology Partner:
+<a href="https://infusionn.in" target="_blank" class="link">Infusionn Pvt. Ltd.</a>
+</p>
     </div>
   </div>
 
@@ -245,11 +253,11 @@ DASHBOARD_HTML = r"""
         </div>
         <div class="field">
           <label>Location</label>
-          <input type="text" id="location" placeholder="e.g. Miami, Lahore, London" required>
+          <input type="text" id="location" placeholder="e.g. Agra, Bhopal, Aligarh" value="Agra" required>
         </div>
         <div class="field">
           <label>Country</label>
-          <input type="text" id="country" list="countryOptions" value="United States" placeholder="Choose or type any country" required>
+          <input type="text" id="country" list="countryOptions" value="India" placeholder="Choose or type any country" required>
           <datalist id="countryOptions">
             {% for country in country_options %}
             <option value="{{ country }}"></option>
@@ -323,7 +331,11 @@ DASHBOARD_HTML = r"""
   </div>
 
   <footer style="text-align:center; padding:24px 0 8px; color:var(--muted); font-size:12px;">
-    &copy; <span id="footerYear"></span> NextGen Analytics. All rights reserved.
+    &copy; <span id="footerYear"></span>
+Attrix Technologies. Developed by
+<a href="https://vijaygoswami.com" class="link" target="_blank">Vijay Goswami</a>.
+Technology Partner:
+<a href="https://infusionn.in" class="link" target="_blank">Infusionn Pvt. Ltd.</a>
   </footer>
 </div>
 
@@ -701,7 +713,7 @@ def _csv_response(leads):
         output.getvalue(),
         mimetype="text/csv",
         headers={
-            "Content-Disposition": f"attachment; filename=nextgen_analytics_leads_{timestamp}.csv"
+            "Content-Disposition": f"attachment; filename=attrix_leads_{timestamp}.csv"
         },
     )
 
@@ -726,7 +738,11 @@ def api_export():
     return _csv_response(leads)
 
 if __name__ == "__main__":
-    print(f"\n 🎯 NextGen Analytics — Lead Generator running at http://{config.FLASK_HOST}:{config.FLASK_PORT}\n")
+    print(
+    f"\n📈 Attrix Lead Generator\n"
+    f"Developed by Vijay Goswami\n"
+    f"Running at http://{config.FLASK_HOST}:{config.FLASK_PORT}\n"
+)
     app.run(
         host=config.FLASK_HOST,
         port=config.FLASK_PORT,
