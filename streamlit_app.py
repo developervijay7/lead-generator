@@ -1,4 +1,4 @@
-"""Streamlit version of NextGen Lead Generator - Flask code ko touch nahi kiya"""
+"""Streamlit version of Attrix Lead Generator - Flask code ko touch nahi kiya"""
 
 import subprocess
 import sys
@@ -22,7 +22,7 @@ from analyzer import analyze_leads         # Tumhara existing analyzer
 import config
 
 st.set_page_config(
-    page_title="NextGen Lead Generator",
+    page_title="Attrix Lead Generator",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -89,8 +89,21 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown("# 🎯 NextGen Analytics")
-st.markdown("**Lead Generator — Find businesses on Google Maps that need web development services**")
+st.markdown("# 📈 Attrix Lead Generator")
+st.markdown(
+    """
+**AI-Powered Google Maps Lead Generator**
+
+Developed by **Vijay Goswami**  
+🌐 https://vijaygoswami.com
+
+Powered by **Attrix Technologies**  
+https://www.attrixtech.com
+
+Technology Partner: **Infusionn Pvt. Ltd.**  
+https://infusionn.in
+"""
+)
 st.divider()
 
 # Search Form
@@ -100,10 +113,10 @@ with col1:
     business_type = st.text_input("Business Type", "Gym", placeholder="e.g. restaurants, plumbers")
 
 with col2:
-    location = st.text_input("Location", "Karachi", placeholder="e.g. Miami, Lahore")
+    location = st.text_input("Location", "Agra", placeholder="e.g. Bhopal, Aligarh")
 
 with col3:
-    country = st.selectbox("Country", config.COUNTRY_OPTIONS, index=config.COUNTRY_OPTIONS.index("Pakistan"))
+    country = st.selectbox("Country", config.COUNTRY_OPTIONS, index=config.COUNTRY_OPTIONS.index("India"))
 
 with col4:
     max_results = st.number_input("Max Results", min_value=1, max_value=1000, value=20)
@@ -287,7 +300,7 @@ if st.session_state.leads_df is not None and not st.session_state.leads_df.empty
     st.download_button(
         label="📥 Download CSV",
         data=csv,
-        file_name=f"nextgen_leads_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+        file_name=f"attrix_leads_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
         mime="text/csv",
         use_container_width=True
     )
@@ -296,7 +309,11 @@ if st.session_state.leads_df is not None and not st.session_state.leads_df.empty
 st.divider()
 st.markdown(
     f"<p style='text-align: center; color: #71717a; font-size: 12px;'>"
-    f"&copy; {datetime.now().year} NextGen Analytics. All rights reserved."
+    f"&copy; {datetime.now().year} © {datetime.now().year} Attrix Technologies
+
+Developed by Vijay Goswami
+
+Technology Partner: Infusionn Pvt. Ltd. All rights reserved."
     f"</p>",
     unsafe_allow_html=True
 )
