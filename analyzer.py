@@ -1,4 +1,4 @@
-"""Website quality analyzer — checks if a business needs web development."""
+"""Website analysis engine used by Attrix Lead Generator."""
 
 import requests
 from bs4 import BeautifulSoup
@@ -65,7 +65,7 @@ def _extract_email(soup, html_text):
 
 def check_website(url):
     """
-    Analyze a single website and return a quality report.
+    Analyze a business website and generate a quality report for lead qualification.
 
     Returns a dict with:
         - exists: bool
