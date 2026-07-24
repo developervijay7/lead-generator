@@ -307,13 +307,21 @@ if st.session_state.leads_df is not None and not st.session_state.leads_df.empty
 
 # Footer
 st.divider()
+
 st.markdown(
-    f"<p style='text-align: center; color: #71717a; font-size: 12px;'>"
-    f"&copy; {datetime.now().year} © {datetime.now().year} Attrix Technologies
+    """
+### 📈 Attrix Lead Generator
 
-Developed by Vijay Goswami
+**AI-Powered Google Maps Lead Generator**
 
-Technology Partner: Infusionn Pvt. Ltd. All rights reserved."
-    f"</p>",
-    unsafe_allow_html=True
+Developed by **Vijay Goswami**  
+<a href="https://vijaygoswami.com" target="_blank">vijaygoswami.com</a>
+
+Powered by **Attrix Technologies**  
+<a href="https://www.attrixtech.com" target="_blank">attrixtech.com</a>
+
+Technology Partner: **Infusionn Pvt. Ltd.**  
+<a href="https://infusionn.in" target="_blank">infusionn.in</a>
+""",
+    unsafe_allow_html=True,
 )
