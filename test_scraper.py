@@ -8,7 +8,11 @@ def test():
         def cb(c, t, m):
             print(f"  [{c}/{t}] {m}")
 
-        results = scrape_google_maps("restaurants in Miami FL", max_results=3, progress_callback=cb)
+        results = scrape_google_maps(
+    "restaurants in Agra, India",
+    max_results=3,
+    progress_callback=cb
+)
         print(f"GOT {len(results)} results")
         for r in results:
             name = r.get("name", "?")
