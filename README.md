@@ -1,5 +1,6 @@
 ---
-title: NextGen Analytics Lead Generator
+
+title: Attrix Lead Generator
 emoji: 📈
 colorFrom: blue
 colorTo: indigo
@@ -10,73 +11,255 @@ app_port: 7860
 pinned: false
 license: mit
 tags:
-    - lead-generation
-    - google-maps
-    - web-scraping
-    - flask
-    - playwright
-    - ai
-    - saas
-    - b2b
-    - sales-automation
-    - streamlit
-short_description: AI-powered Google Maps lead scraper with 70% hot lead rate for web agencies
+
+* lead-generation
+* google-maps
+* web-scraping
+* flask
+* playwright
+* ai
+* saas
+* b2b
+* sales-automation
+* streamlit
+  short_description: AI-powered Google Maps lead generator for agencies, freelancers, and sales teams.
+
 ---
 
-# NextGen Analytics — Lead Generator 📈
+# Attrix Lead Generator 📈
 
 <div align="center">
-  
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://nextgen-lead-generator-nxp2zwykt8btyyvsutv42a.streamlit.app/)
-[![Landing Page](https://img.shields.io/badge/Landing%20Page-GitHub%20Pages-181717?style=for-the-badge&logo=github)](https://affaf12.github.io/nextgen-lead-generator)
-[![GitHub Repo](https://img.shields.io/badge/Source%20Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/affaf12/nextgen-lead-generator)
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit)](https://leadgeneratorbyvijay.streamlit.app/)
+[![Developer](https://img.shields.io/badge/Developer-Vijay%20Goswami-0A66C2?style=for-the-badge)](https://vijaygoswami.com)
+[![Attrix Technologies](https://img.shields.io/badge/Attrix-Technologies-2563EB?style=for-the-badge)](https://www.attrixtech.com)
+[![Infusionn Pvt.%20Ltd.](https://img.shields.io/badge/Infusionn-Pvt.%20Ltd.-4F46E5?style=for-the-badge)](https://infusionn.in)
+[![GitHub](https://img.shields.io/badge/Source%20Code-GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/developervijay7/lead-generator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**Find high-intent clients on Google Maps automatically. 70% hot lead rate. Get 60 sale-ready leads in 2.8 minutes.**
+### AI-Powered Google Maps Lead Generator for Agencies & Sales Teams
+
+Generate highly targeted business leads from Google Maps, analyze websites, discover contact information, and prioritize prospects using intelligent lead scoring.
+
+**Developed by [Vijay Goswami](https://vijaygoswami.com)**
+Founder, **[Attrix Technologies](https://www.attrixtech.com)**
+In collaboration with **[Infusionn Pvt. Ltd.](https://infusionn.in)**
 
 </div>
 
-## 🚀 Live Demo
+---
 
-**[▶️ Try the Live Streamlit App](https://nextgen-lead-generator-nxp2zwykt8btyyvsutv42a.streamlit.app/)**  
-**[🌐 View Pro Landing Page](https://affaf12.github.io/nextgen-lead-generator)**  
-**[📂 Source Code on GitHub](https://github.com/affaf12/nextgen-lead-generator)**  
+# 🚀 Live Demo
 
-## ⚡ Key Features
+### 🌐 Demo
 
-| Feature | Description | Benefit |
-| --- | --- | --- |
-| **Smart Filtering** | Target by niche, location, rating, review count, website status | Only contact businesses that match your ICP |
-| **AI Lead Scoring** | Hot/Warm/Low scoring based on 15+ intent signals | Prioritize outreach to highest-converting prospects |
-| **Contact Extraction** | Auto-extract emails, phone numbers, social media links | Skip hours of manual research per lead |
-| **Website Analysis** | Detects missing sites, slow speed, mobile issues, no SSL | Personalize pitch with specific pain points |
-| **One-Click Export** | Export to CSV, Excel, or Google Sheets instantly | Import directly into your CRM or outreach tool |
+https://leadgeneratorbyvijay.streamlit.app/
 
-## 📊 Performance Metrics
+### 📂 GitHub Repository
 
-| Metric | Result | Industry Avg |
-| --- | --- | --- |
-| **Hot Lead Rate** | **70%** | 2-5% |
-| **Email Found Rate** | **96%** | 40-60% |
-| **Phone Found Rate** | **91%** | 30-50% |
-| **Avg. Time to 60 Leads** | **2.8 min** | 4-6 hours |
-| **No Website/Issues** | **68%** | N/A |
+https://github.com/developervijay7/lead-generator
 
-## 🛠️ Tech Stack
+### 👨‍💻 Developer
 
-Built with modern, scalable tech: **Python + Playwright + Flask + Pandas + Streamlit**
+https://vijaygoswami.com
 
-## 📦 How It Works
+---
 
-1. **Define Your Target** → Enter niche, location, filters. Ex: "Restaurants in Karachi with <4.5 stars and no website"
-2. **AI Scrapes & Analyzes** → Playwright scrapes Google Maps while AI scores each business and extracts contact info
-3. **Export & Close** → Get Hot leads with emails, phones, and specific website issues. Export to CSV and start outreach
+# ✨ Features
 
-## 🔧 Installation
+| Feature                           | Description                                                                            | Benefit                                   |
+| --------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------- |
+| 🎯 Smart Business Filtering       | Search businesses by niche, city, ratings, reviews, and website availability           | Target your ideal customers               |
+| 🤖 AI Lead Scoring                | Automatically categorize leads as Hot, Warm, or Low Priority                           | Focus on prospects most likely to convert |
+| 📧 Contact Information Extraction | Extract emails, phone numbers, websites, and social media links                        | Reduce manual research time               |
+| 🌐 Website Analysis               | Detect missing websites, SSL issues, slow performance, mobile responsiveness, and more | Create personalized outreach campaigns    |
+| 📊 Export Options                 | Export results to CSV or Excel for CRM integration                                     | Seamless sales workflow                   |
+| ⚡ Fast Processing                 | Scrape and analyze dozens of businesses within minutes                                 | Save hours of manual work                 |
+
+---
+
+# 📈 Performance
+
+| Metric                        | Typical Result                                    |
+| ----------------------------- | ------------------------------------------------- |
+| Hot Lead Detection            | Up to 70% qualified opportunities                 |
+| Email Discovery               | Up to 96% availability                            |
+| Phone Number Detection        | Up to 91% availability                            |
+| Processing Speed              | Around 60 businesses in under 3 minutes           |
+| Website Opportunity Detection | Identifies businesses lacking modern web presence |
+
+> Results may vary depending on business category, region, and publicly available data.
+
+---
+
+# 🛠 Tech Stack
+
+* Python
+* Playwright
+* Flask
+* Streamlit
+* Pandas
+* BeautifulSoup
+* Requests
+* OpenAI-ready AI Integration
+* CSV & Excel Export
+
+---
+
+# ⚙️ How It Works
+
+### 1. Select Your Target Market
+
+Enter a business category and location.
+
+Example:
+
+> Restaurants in Delhi
+
+or
+
+> Dentists in Mumbai
+
+Apply filters such as:
+
+* Minimum Rating
+* Maximum Rating
+* Review Count
+* Website Availability
+
+---
+
+### 2. Automated Data Collection
+
+The application:
+
+* Searches Google Maps
+* Collects business information
+* Visits business websites
+* Extracts contact details
+* Detects website issues
+* Scores each lead based on business potential
+
+---
+
+### 3. Export & Start Outreach
+
+Export your qualified leads as:
+
+* CSV
+* Excel
+
+Import them into your CRM or email marketing platform and begin personalized outreach campaigns.
+
+---
+
+# 📦 Installation
 
 ```bash
-git clone https://github.com/affaf12/nextgen-lead-generator.git
-cd nextgen-lead-generator
+git clone https://github.com/developervijay7/lead-generator.git
+
+cd lead-generator
+
 pip install -r requirements.txt
+
 playwright install
+
 python app.py
+```
+
+---
+
+# ▶️ Running the Application
+
+```bash
+python app.py
+```
+
+or launch the Streamlit interface:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 🌐 Online Demo
+
+Experience the live application without installing anything:
+
+https://leadgeneratorbyvijay.streamlit.app/
+
+---
+
+# 👨‍💻 About the Developer
+
+**Vijay Goswami**
+
+Founder & Full Stack Developer
+
+Website:
+https://vijaygoswami.com
+
+Company:
+https://www.attrixtech.com
+
+Technology Partner:
+https://infusionn.in
+
+Specializing in:
+
+* AI Applications
+* Laravel Development
+* Next.js
+* React Native
+* Automation Tools
+* SaaS Products
+* CRM Solutions
+* Business Intelligence
+
+---
+
+# 🤝 Contributing
+
+Contributions, feature requests, and pull requests are always welcome.
+
+If you'd like to improve this project, feel free to fork the repository and submit a pull request.
+
+---
+
+# 📄 License
+
+This project is released under the **MIT License**.
+
+---
+
+## ⭐ Support the Project
+
+If you find this project useful:
+
+* ⭐ Star the GitHub repository
+* 🍴 Fork the project
+* 💼 Share it with your network
+* 🐞 Report bugs or suggest improvements
+
+GitHub Repository:
+
+https://github.com/developervijay7/lead-generator
+
+---
+
+<div align="center">
+
+### Built with ❤️ by Vijay Goswami
+
+**Attrix Technologies**
+
+https://www.attrixtech.com
+
+**Technology Partner**
+
+Infusionn Pvt. Ltd.
+
+https://infusionn.in
+
+</div>
