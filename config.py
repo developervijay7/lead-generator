@@ -1,4 +1,4 @@
-"""Configuration settings for the lead generation tool — VIP Edition."""
+"""Configuration settings for Attrix Lead Generator."""
 
 import os
 
