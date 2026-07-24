@@ -1,5 +1,4 @@
 ---
-
 title: Attrix Lead Generator
 emoji: 📈
 colorFrom: blue
@@ -11,19 +10,17 @@ app_port: 7860
 pinned: false
 license: mit
 tags:
-
-* lead-generation
-* google-maps
-* web-scraping
-* flask
-* playwright
-* ai
-* saas
-* b2b
-* sales-automation
-* streamlit
-  short_description: AI-powered Google Maps lead generator for agencies, freelancers, and sales teams.
-
+  - lead-generation
+  - google-maps
+  - web-scraping
+  - flask
+  - playwright
+  - ai
+  - saas
+  - b2b
+  - sales-automation
+  - streamlit
+short_description: AI-powered Google Maps lead generator for agencies, freelancers, and sales teams.
 ---
 
 # Attrix Lead Generator 📈
