@@ -1,12 +1,15 @@
 @echo off
-title NextGen Analytics - Lead Generator
+title Attrix Lead Generator
 color 0B
 cd /d "%~dp0"
 
 echo.
 echo ============================================
-echo   NextGen Analytics - Lead Generator
+echo      Attrix Lead Generator
 echo ============================================
+echo.
+echo Developed by Vijay Goswami
+echo Attrix Technologies | Infusionn Pvt. Ltd.
 echo.
 
 REM --- Check we're in the right folder ---
@@ -26,7 +29,7 @@ where python >nul 2>nul
 if errorlevel 1 (
     echo [ERROR] Python is not installed or not in PATH.
     echo Please install Python 3.11 from https://www.python.org/downloads/
-    echo IMPORTANT: During install, check "Add python.exe to PATH".
+    echo IMPORTANT: During installation, enable "Add python.exe to PATH".
     pause
     exit /b 1
 )
@@ -46,12 +49,13 @@ echo [2/4] Installing dependencies...
 python -m pip install --upgrade pip >nul 2>&1
 pip install -r requirements.txt
 if errorlevel 1 (
-    echo [ERROR] Failed to install requirements. Check your internet connection and try again.
+    echo [ERROR] Failed to install project dependencies.
+    echo Please check your internet connection and try again.
     pause
     exit /b 1
 )
 
-echo [3/4] Installing Chromium browser for scraping...
+echo [3/4] Installing Chromium browser for Playwright...
 set PLAYWRIGHT_DOWNLOAD_HOST=https://cdn.npmmirror.com/binaries/playwright
 python -m playwright install chromium
 if errorlevel 1 (
@@ -61,30 +65,45 @@ if errorlevel 1 (
     if errorlevel 1 (
         echo.
         echo ============================================
-        echo   [ERROR] Chromium install FAILED.
-        echo   Scraping will NOT work until this is fixed.
+        echo      Chromium Installation Failed
         echo ============================================
         echo.
-        echo Try one of these, then run this file again:
-        echo   1. Connect to a VPN or Cloudflare WARP ^(https://1.1.1.1/^)
-        echo   2. Run manually:
-        echo        venv\Scripts\activate
-        echo        python -m playwright install chromium
+        echo Browser automation will not work until Chromium is installed.
+        echo.
+        echo Try one of the following:
+        echo.
+        echo   1. Connect using a VPN or Cloudflare WARP
+        echo      https://1.1.1.1/
+        echo.
+        echo   2. Install manually:
+        echo      venv\Scripts\activate
+        echo      python -m playwright install chromium
         echo.
         pause
         exit /b 1
     )
 )
 
-echo [4/4] Starting the app...
+echo [4/4] Launching Attrix Lead Generator...
 echo.
-echo Dashboard will open in your browser shortly at http://127.0.0.1:5000
-echo Keep this window open while you use the app.
-echo Close this window ^(or press CTRL+C^) to stop the app.
+echo Application URL:
+echo http://127.0.0.1:5000
+echo.
+echo Developed by Vijay Goswami
+echo https://vijaygoswami.com
+echo.
+echo Attrix Technologies
+echo https://www.attrixtech.com
+echo.
+echo Technology Partner:
+echo Infusionn Pvt. Ltd.
+echo https://infusionn.in
+echo.
+echo Keep this window open while the application is running.
+echo Press CTRL+C to stop the server.
 echo.
 
-REM --- Give Flask a moment to boot before opening the browser, so it doesn't
-REM     load before the server is ready ---
+REM --- Give Flask time to start before opening the browser ---
 start "" cmd /c "timeout /t 4 >nul && start http://127.0.0.1:5000"
 
 python app.py
